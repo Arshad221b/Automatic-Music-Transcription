@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Note recognition and Scripting</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Fullscreen Background Image Slideshow with CSS3 - A Css-only fullscreen background image slideshow" />
+        <meta name="keywords" content="css3, css-only, fullscreen, background, slideshow, images, content" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico">
+        <link rel="stylesheet" type="text/css" href="/static/css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/style2.css" />
+		<script type="text/javascript" src="/static/js/modernizr.custom.86080.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="description" content="Slide Down Box Menu with jQuery and CSS3" />
+        <meta name="keywords" content="jquery, css3, sliding, box, menu, cube, navigation, portfolio, thumbnails"/>
+		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
+        <link rel="stylesheet" href="/static/css/style.css" type="text/css" media="screen"/>
+        <style>
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+
+}
+
+
+
+			body{
+				background:#333 url(p13.jpg) repeat top left;
+				font-family:"Helvetica Bold’,Helvetica,’Arial Bold’,Arial,sans-serif";
+			}
+			span.reference{
+				position:fixed;
+				left:10px;
+				bottom:10px;
+				font-size:12px;
+                font-family:"Helvetica Bold’,Helvetica,’Arial Bold’,Arial,sans-serif";
+			}
+			span.reference a{
+				color:#aaa;
+				text-transform:uppercase;
+				text-decoration:none;
+				text-shadow:1px 1px 1px #000;
+				margin-right:30px;
+			}
+			span.reference a:hover{
+				color:#ddd;
+			}
+			ul.sdt_menu{
+				margin-top:150px;
+			}
+			h1.title{
+				text-indent:-9000px;
+				background:transparent url(p13.png) no-repeat top left;
+				width:633px;
+				height:69px;
+			}
+		</style>
+    </head>
+    <body id="page">
+
+        <ul class="cb-slideshow">
+            <li><span>Image 01</span><div><h3>Piano Rhythms & Patterns</h3></div></li>
+            <li><span>Image 02</span><div><h3>Compositions</h3></div></li>
+            <li><span>Image 05</span><div><h3>Sheet Music</h3></div></li>
+            <li><span>Image 03</span><div><h3>Soloist</h3></div></li>
+
+            <li><span>Image 04</span><div><h3>Accompanist</h3></div></li>
+
+            <li><span>Image 06</span><div><h3>Staff Notations</h3></div></li>
+        </ul>
+        <div class="container">
+
+                <span class="right">
+                    <a href="http://www.flickr.com/photos/markjsebastian/" target="_blank"></a>
+                    <a href="http://creativecommons.org/licenses/by-sa/2.0/deed.en" target="_blank"></a>
+                    <a href="http://tympanus.net/codrops/2012/01/02/fullscreen-background-image-slideshow-with-css3/">
+
+                    </a>
+                </span>
+                <div class="clr"></div>
+            </div><!--/ Codrops top bar -->
+            <header>
+                				<p class="codrops-demos">
+
+
+  <div class="back">
+ <div  class="button_base b03_skewed_slide_in">
+
+<!--
+    <div  class="button_base b03_skewed_slide_in">
+
+  <button class="btn">Upload a file</button>
+  <input type="file" name="myfile" />
+</div>
+-->
+
+ <form name="Music" action="/" method="post" enctype="multipart/form-data">
+
+      <input id="edit" type="file" name="file">
+      <input id ="edit1" type="submit" value="Submit" onclick="button_click()">
+ </form>
+
+
+<script>
+function button_click()
+{
+
+alert('Your audio will be converted shortly ..');
+document.getElementById('edit').play();
+}
+</script>
+
+
+    </div>
+</div>
+
+
+<div class="back">
+
+</div>
+
+				</p>
+            </header>
+        </div>
+
+<div class="content">
+
+			<ul id="sdt_menu" class="sdt_menu">
+				<li>
+					<a href="#">
+						<img src="/static/images/p20.jpg" alt=""/>
+						<span class="sdt_active"></span>
+						<span class="sdt_wrap">
+							<span class="sdt_link">About us</span>
+							<span class="sdt_descr">Get to know us</span>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="/static/images/p21.jpg" alt=""/>
+						<span class="sdt_active"></span>
+						<span class="sdt_wrap">
+							<span class="sdt_link">Intro</span>
+							<span class="sdt_descr">Get to know music alphabets</span>
+						</span>
+					</a>
+					<div class="sdt_box">
+							<a href="#">Basics</a>
+							<a href="#">Intermediate</a>
+							<a href="#">Experts</a>
+					</div>
+				</li>
+				<li>
+					<a href="#">
+						<img src="/static/images/p22.jpg" alt=""/>
+						<span class="sdt_active"></span>
+						<span class="sdt_wrap">
+							<span class="sdt_link">Scripts</span>
+							<span class="sdt_descr">Successfully generated scripts</span>
+						</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="/static/images/p24.jpg" alt=""/>
+						<span class="sdt_active"></span>
+						<span class="sdt_wrap">
+							<span class="sdt_link">Help</span>
+							<span class="sdt_descr">Discussion forums</span>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="/static/images/p25.jpg" alt=""/>
+						<span class="sdt_active"></span>
+						<span class="sdt_wrap">
+							<span onclick="window.location.href='/logn'" class="sdt_link">Sign In</span>
+							<span class="sdt_descr">I like to code</span>
+						</span>
+					</a>
+					<div class="sdt_box">
+						<a href="#">Already a member?</a>
+						<a href="#">Register </a>
+
+					</div>
+				</li>
+			</ul>
+
+		</div>
+
+
+        <!-- The JavaScript -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script type="text/javascript" src="/static/js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript">
+            $(function() {
+				/**
+				* for each menu element, on mouseenter,
+				* we enlarge the image, and show both sdt_active span and
+				* sdt_wrap span. If the element has a sub menu (sdt_box),
+				* then we slide it - if the element is the last one in the menu
+				* we slide it to the left, otherwise to the right
+				*/
+                $('#sdt_menu > li').bind('mouseenter',function(){
+					var $elem = $(this);
+					$elem.find('img')
+						 .stop(true)
+						 .animate({
+							'width':'170px',
+							'height':'170px',
+							'left':'0px'
+						 },400,'easeOutBack')
+						 .andSelf()
+						 .find('.sdt_wrap')
+					     .stop(true)
+						 .animate({'top':'140px'},500,'easeOutBack')
+						 .andSelf()
+						 .find('.sdt_active')
+					     .stop(true)
+						 .animate({'height':'170px'},300,function(){
+						var $sub_menu = $elem.find('.sdt_box');
+						if($sub_menu.length){
+							var left = '170px';
+							if($elem.parent().children().length == $elem.index()+1)
+								left = '-170px';
+							$sub_menu.show().animate({'left':left},200);
+						}
+					});
+				}).bind('mouseleave',function(){
+					var $elem = $(this);
+					var $sub_menu = $elem.find('.sdt_box');
+					if($sub_menu.length)
+						$sub_menu.hide().css('left','0px');
+
+					$elem.find('.sdt_active')
+						 .stop(true)
+						 .animate({'height':'0px'},300)
+						 .andSelf().find('img')
+						 .stop(true)
+						 .animate({
+							'width':'0px',
+							'height':'0px',
+							'left':'85px'},400)
+						 .andSelf()
+						 .find('.sdt_wrap')
+						 .stop(true)
+						 .animate({'top':'25px'},500);
+				});
+            });
+        </script>
+
+    </body>
+</html>
+

@@ -1,4 +1,3 @@
-
 import numpy as np
 import utils
 import pretty_midi
@@ -8,8 +7,8 @@ from PIL import Image
 
 def test():
     model       = load_model('ckpt3.h5')
-    images_path = 'testimg/'
-    midi_path   = 'testmid/'
+    images_path = 'dataSPEC/'
+    midi_path   = 'split/'
 
 
     y     = []
@@ -49,3 +48,4 @@ def test():
     return(final)
 
 #print(test())
+

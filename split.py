@@ -84,8 +84,8 @@ def merge_midi(midis, input_dir, output, default_tempo=500000):
 
 def main():
 
-  input_dir  = 'dataMIDI2/'
-  target_dir = 'splitMIDI/'
+  input_dir  = '/home/satweekcr7/Desktop/project/test/'
+  target_dir = '/home/satweekcr7/Desktop/project/split/'
   length = 1/8
 
   # Get all the input midi files
