@@ -4,7 +4,7 @@ from os import listdir
 from os.path import isfile, split, join
 import argparse
 
-def split_midi(mid_file, target_dir, default_tempo=500000, target_segment_len=1/8):
+def split_midi(mid_file, target_dir, default_tempo=500000, target_segment_len=1):
   '''Split midi file into many chunks'''
   song_name = split(mid_file)[-1][:-4]
   mid = MidiFile(mid_file)
@@ -82,16 +82,17 @@ def merge_midi(midis, input_dir, output, default_tempo=500000):
 
 
 
-def main():
 
-  input_dir  = '/home/satweekcr7/Desktop/project/test/'
-  target_dir = '/home/satweekcr7/Desktop/project/split/'
+def main():
+  print("Running")
+  input_dir = 'data5/'
+  target_dir = 'split_midi/'
   length = 1/8
 
   # Get all the input midi files
-  midis = [x for x in listdir(input_dir) if x.endswith('.mid')]
-
-  
+  midis = [x for x in listdir(input_dir) if x.endswith('.midi')]
+  print(midis)
+  print(listdir(input_dir))
   for midi in midis:
     print(midi)
     try:
